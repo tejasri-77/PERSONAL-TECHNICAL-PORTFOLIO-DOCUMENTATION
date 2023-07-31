@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: fantasy;
+    font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
 html{
@@ -13,8 +13,8 @@ body{
 }
 #header{
     width: 100%;
-    height: 70vh;
-    background-image: url(Malineni_logo.png);
+    height: 100vh;
+    background-image: url(student.png);
     background-size: cover;
     background-position: cover;
 }
@@ -49,6 +49,7 @@ nav ul li a::after{
     position: absolute;
     left: 0;
     bottom: -6px;
+    transition: 0.5s;
 }
 nav ul li a:hover::after{
     width: 100%;
@@ -57,12 +58,16 @@ nav ul li a:hover::after{
     margin-top: 10%;
     font-size: 30px;
 }
-.header-text span{
-    color: red;
+.header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
 }
-/*-------about-----*/
-#About{
-    padding: 80px 0;
+.header-text  h1 span{
+    color: #ff004f;
+}
+/*--------------------------about-----------------------*/
+#about{
+    padding:80px 0;
     color: #ababab;
 }
 .row{
@@ -70,6 +75,7 @@ nav ul li a:hover::after{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .about-col-1{
     flex-basis: 35%;
     }
@@ -77,31 +83,25 @@ nav ul li a:hover::after{
     width: 100%;
     border-radius: 15px;
 }
+
 .about-col-2{
-    flex-basis: 55%;
+    flex-basis: 60%;
 }
-.about-col-3{
-    flex-basis: 55%;
-}
-.about-col-4{
-    flex-basis: 55%;
-}
-.about-col-5{
-    flex-basis: 55%;
-}
+
 .sub-title{
     font-size: 50px;
     font-weight: 600;
     color: white;
 }
+
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
 }
 .tab-links{
-    margin-right: 180px;
+    margin-right: 50px;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
     cursor: pointer;
     position: relative;
 }
@@ -115,10 +115,12 @@ nav ul li a:hover::after{
     bottom: -8px;
     transition: 0.5s;
 }
+
 .tab-links.active-link::after{
     width: 50%;
 
 }
+
 .tab-contents ul li{
    list-style: none;
    margin: 10px 0;
@@ -127,13 +129,194 @@ nav ul li a:hover::after{
     color: crimson;
     font-size: 14px;
 }
+
 .tab-contents{
     display: none;
 }
 .tab-contents.active-tab{
     display: block;
 }
-/*----contact----*/
+/*-------------------------Technical Skills--------------------*/
+#tehcnicalskills{
+    padding: 30px 0;
+}
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.skills-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.skills-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.skills-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.skills-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.skills-list div:hover{
+    background: #ff0000;
+    transform: translateY(-10px);
+}
+/*-------------------------------------------projects-----------------------------*/
+#projects{
+    padding: 30px 0;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+.project:hover .layer{
+    height: 100%;
+}
+/*---------------------------Achievements--------------------------*/
+#achievements{
+    padding: 30px 0;
+}
+.achievements-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.achievements-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.achievements-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.achievements-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.achievements-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.achievements-list div:hover{
+    background: #ff0000;
+    transform: translateY(-10px);
+}
+/*-------------------------------------------Exeperience-----------------------------*/
+#experience{
+    padding: 30px ;
+}
+.experience-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.exp div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.exp div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.exp div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.exp div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.exp div:hover{
+    background: #ff0000;
+    transform: translateY(-10px);
+}
+.exp div p{
+    font-size: 15px;
+}
+/*------------------------------contact--------------------------------*/
+
 .contact-left{
     flex-basis: 35%;
 }
@@ -144,7 +327,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: crimson;
+    color: blue;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -178,12 +361,12 @@ form input, form textarea{
     outline: none;
     background: #262626;
     padding: 15px;
-    margin: 15px o;
+    margin: 15px 0px;
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
 }
-form .button{
+form button{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
@@ -192,28 +375,42 @@ form .button{
 .copyright{
     width: 100%;
     text-align: center;
-    padding: 25px 0;
+    padding: 25px ;
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
 }
-/*------css small screens-----*/
-nav .fa{
+/*-----------------------------css small screens-------------------*/
+nav .fa-regular{
     display: none;
 }
-.header-text{
-        margin-top: 100px;
-        font-size: 16px;
+nav .fa-solid{
+    display: none;
+}
+@media (max-width: 600px){
+    #header{
+       
+        background-image: url(student3.jpg);
+       
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 12px;
     }
     .header-text h1{
         font-size: 30px;
+       color: blue;
     }
-    nav .fa{
+    nav ul .fa-regular{
+        display: block;
+        font-size: 25px;
+    }
+    nav .fa-solid{
         display: block;
         font-size: 25px;
     }
     nav ul{
-        background: crimson;
+        background: brown;
         position: fixed;
         top: 0;
         right: -200px;
@@ -223,16 +420,46 @@ nav .fa{
         z-index: 2;
         transition: right 0.5s;
     }
-nav ul li{
-    display: block;
-    margin: 10px;
-}
-nav ul .fa{
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-}
-.sub-title{
-    font-size: 40px;
+    nav ul li{
+       display: block;
+       margin: 20px;
+    }
+    nav ul .fa-regular{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    nav .fa-solid{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+
+    
+}/*
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 40px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
 }
