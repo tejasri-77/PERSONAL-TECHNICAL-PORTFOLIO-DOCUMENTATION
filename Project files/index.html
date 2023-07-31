@@ -1,128 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Documentation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="header">
-       <div class="container">
-        <nav>
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li><br>
-                <li><a href="#about">About</a></li><br>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <h1>Hi, I'm <span>Teja sri</span><br>From Malineni Lakshmaiah Womens Engineering College</h1>
-        </div>
-       </div> 
-    </div>
-    <!---about-->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Malineni_logo.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Seeking an entry-level postion in the field of Information Technology in a reputed 
-                        organization where i can improve my knowledge and skills.As a dedicated and driven individual,
-                        I aim to apply my problem-solving skills and creativity to develop robust software solutions.
-                    </p>
-                    <div class="tab-titles">
-                    <p class="tab-links" onclick="opentab('Education')"><b>EDUCATION:</b></p>
-                   </div>
-                <div class="tab-contents" id="EDUCATION">
-                    <ul>
-                        <li><span>2023</span><br>Btech-Malineni Lakshmaiah Womens Engineering College<br>
-                        (currently pursuing Btech-4th year)</li><br>
-                        <li><span>2020</span><br>Intermediate-Sri chaitanya junior collage</li>
-                        <li><span>2018</span><br>SSC at Sri chaitanya Techno school</li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal-Technical-Portfolio-Documentation</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/93160cd189.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#tehcnicalskills">Technical Skills</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                     </ul>
-                </div>
-                <p class="tab-links active-link" onclick="opentab('Skills')"><b>SKILLS:</b></p>
-                <div class="tab-contents active-tab" id="SKILLS">
-                    <ul>
-                        <li><span>Languages Known :</span><br><span>Front-end : </span>C,Python,Basic Java<br>
-                            <span>Back-end : </span> HTML,CSS,SQL</li>
-    
-                    </ul>
-                </div>
-                <p class="tab-links active-link" onclick="opentab('HOBBIES')"><b>HOBBIES:</b></p>
-                <div class="tab-contents active-tab" id="HOBBIES">
-                    <ul>
-                        <li>Self-Starter</li>
-                        <li>Net surfing</li>
-                        <li>Communicating with others</li>
-                    </ul>
-                </div>
-                <p class="tab-links active-link" onclick="opentab('STRENGTHS:')"><b>STRENGTHS:</b></p>
-                <div class="tab-contents active-tab" id="STRENGTHS">
-                    <ul>
-                        <li>Quick learner and team player</li>
-                        <li>Willing to adopt to new environment</li>
-                        <li>Determination and dedication towards work</li>
-                    </ul>
-                </div>
-                <p class="tab-links active-link" onclick="opentab('PERSONAL DETAILS:')"><b>PERSONAL DETAILS:</b></p>
-                <div class="tab-contents active-tab" id="PERSONAL DETAILS">
-                    <ul>
-                        <li><b>Name:</b> Sanga Teja sri</li>
-                        <li><b>Father name:</b>Sanga Subbaro</li>
-                        <li><b>Date of Brith:</b>April-1-2002</li>
-                        <li><b>Nationality:</b>Indian</li>
-                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Teja sri</span><br>From Malineni Lakshmaiah <br>Women's Engineering College</h1>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <!----contact---->
-<div id="contact">
-    <div class="container">
-       <div class="row">
-            <div class="contact-left">
-                 <h1 class="sub-title">Contact Me</h1><br>
-                 <p><i class="fa fa-paper-plane-o"></i>tejachowdarysanga@gmail.com</p><br>
-                 <p><i class="fa fa-phone"></i>6300914759</p><br>
-                 <div class="social-icons">
-                    <a href="https://facebook.com/" class="fa fa-facebook"></a>
-                    <a href="" class="fa fa-twitter"></a>
-                    <a href="" class="fa fa-whatsapp"></a>
-                    <a href="" class="fa fa-instagram"></a>
-                    <a href="" class="fa fa-linkedin"></a>
-                    </div><br>
-                    <a href="images/Teja77_resume.pdf" download>
-                        <button class="button">Resume</button>
-                      </a> 
-            </div>
-            <div class="contact-right">
-               <form>
-                 <input type="text" name="Name" placeholder="Your Name"><br><br>
-                 <input type="email" name="Email" placeholder="Your Email"><br><br>
-                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br><br>
-                 <button type="submit" class="button">Submit</button>
-               </form>
-            </div>
-       </div>
-       <div class="copyright">
-         <p>Copyright @Teja sri.Portfolio Documentation</p>
-       </div>
-  </div>
-   </div>
-    <script>
-        var tablinks=document.getElementsByClassName("tab-links");
-        var tabcontents=document.getElementsByClassName("tab-contents");
+        <!------------------------about---------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="studentpic.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Seeking an entry-level postion in the field of Information Technology in a reputed 
+                            organization where i can improve my knowledge and skills.As a dedicated and driven individual,
+                            I aim to apply my problem-solving skills and creativity to develop robust software solutions.</p>
+                        <div class="tab-titles active-tab">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links active-link" onclick="opentab('certifications')">Certifications</p>
+                            
+                        </div>
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>2020-2024</span><br>B.Tech-Malineni Lakshmaiah Womens Engineering College<br></li><br>
+                                <li><span>2018-2020</span><br>Intermediate-Sri chaitanya junior collage</li><br>
+                                <li><span>2017-2018</span><br>SSC - Sri chaitanya Techno school</li>
+                                </ul>
+                            </ul>
 
-        function opentab(tabname){
+                        </div>
+                        <div class="tab-contents active-tab" id="certifications">
+                            <ul>
+                                <li><span>NPTEL</span><br>Cloud Computing</li><br>
+                                <li><span>MICROSOFT</span><br>Azure Fundamentals and Power Platform Fundamentals</li><br>
+                                <li><span>Coursera</span><br>Machine Learning with Python</li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+
+            </div>
+
+            </div>
+        </div>
+
+        <!-------------------------------Technical Skills---------------->
+        <div id="tehcnicalskills">
+            <div class="container">
+                <h1 class="sub-title">Technical Skills</h1>
+                <div class="skills-list">
+                    <div>
+                        <h2>Technical Skills</h2>
+                        <ul>
+                        <li><h4>C</h4></li>
+                        <li><h4>Python</h4></li>
+                        <li><h4>Java</h4></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Web Technologies</h2>
+                        <ul>
+                        <li><h4>HTML</h4></li>
+                        <li><h4>CSS</h4></li>
+                        <li><h4>JavaScript</h4></li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        
+                        <h2>Databases</h2>
+                        <ul>
+                        <li><h4>SQL</h3></li>
+                        <li><h4>MongoDB</h4></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------Projects------------------------>
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="project-list">
+                    <div class="project">
+                        <img src="weatherapp1.jpg">
+                        <div class="layer">
+                            <h2>Weather Predection App</h2>
+                            
+                            <a href="weather.html"><i  weather class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="hearbeatsensor.jpg">
+                        <div class="layer">
+                            <h2>Heart beat sensor using IOT</h2>
+                        
+                            <a href="heartbeat.html"><i  heartbeat class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="studentgradeprediction.jpg">
+                        <div class="layer">
+                            <h2>Student Grade Predection using AI</h2>
+                            
+                            <a href="studentgradeprediction.html"><i studentgradeprediction class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+            <!-------------------------------Achievements------------------------>
+        <div id="achievements">
+            <div class="container">
+                <h1 class="sub-title">Achievements</h1>
+                    <div class="achievements-list">
+                        <div>
+                            <h2>First Price in Hackthon</h2>
+                            <p> Participated in an Ideathon held by some x organization and got first price</p>
+                            
+                        </div>
+                        <div>
+                            <h2>Participated in Ideathon </h2>
+                            <p> Participated in an Ideathon held by some x organization and got first price</p>
+                            
+                        </div>
+                        <div>
+                            <h2>Participated as Event Manager</h2>
+                            <p> Participated in an Ideathon held by some x organization and got first price</p>
+                           
+                        </div>
+                        <div>
+                            <h2>First Price in Poster Presentation</h2>
+                            <p> Participated in an Ideathon held by some x organization and got first price</p>
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-----------------------------------Experience--------------------------->
+       <div id="experience">
+                <div class="container">
+                    <h1 class="sub-title">Experience</h1>
+                    <div class="exp">
+                        <div>
+                            <h2>Fresher Graduate</h2>
+                            <p> Highly passionated fresher graduate</p>
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!--------------------------------------contact----------------------------->
+        <div id="contact">
+                <div class="container">
+                   <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1><br>
+                            <p><i class="fas fa-paper-plane"></i>tejasrisanga77@gmail.com</p><br>
+                            <p><i class="fas fa-phone-square-alt"></i>6300914759</p><br>
+                            <div class="social-icons">
+                                <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                <a href="https://whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://instagrma.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                                </div><br>
+                                <a href="my resume.pdf.docx" download>
+                                    <button class="button">Resume</button>
+                                </a> 
+                            </div>
+                        <div class="contact-right">
+                           <form>
+                             <input type="text" name="Name" placeholder="Your Name"><br><br>
+                             <input type="email" name="Email" placeholder="Your Email"><br><br>
+                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br><br>
+                             <button type="submit" class="button">Submit</button>
+                           </form>
+                        </div>
+                   </div>
+                   <div class="copyright">
+                     <p>Copyright @Teja sri.Portfolio Documentation</p>
+                   </div>
+                </div>
+            </div>
+
+        <script>
+             var tablinks=document.getElementsByClassName("tab-links");
+             var tabcontents=document.getElementsByClassName("tab-contents");
+             function opentab(tabname){
             for(tablink of tablinks){
                 tablink.classList.remove("active-link");
              }
@@ -132,16 +227,21 @@
              event.currentTarget.classList.add("active-link");
              document.getElementById(tabname).classList.add("active-tab");
         }
-    </script>
-    <script>
-        var sidemenu=document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right="0";
-        }
-        function closemenu(){
-            sidemenu.style.right="-200px";
-        }
-    </script>
-</body>
+        </script>
+        
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+
+
+    </body>
 </html>
+           
+
                    
